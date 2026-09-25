@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>STANFORD — An Immersive Campus Experience</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loading">
+    <div class="loader-logo">STANFORD</div>
+    <div class="loader-line">
+      <span></span>
+    </div>
+    <div class="loader-text">ENTERING CAMPUS...</div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <div class="film"></div>
+  <div class="vignette"></div>
+
+  <header>
+    <div class="brand">
+      <span class="brand-small">STANFORD UNIVERSITY</span>
+      <span class="brand-main">STANFORD</span>
+    </div>
+
+    <div class="chapter">
+      <span id="chapterNumber">00</span>
+      <span>/</span>
+      <span>07</span>
+    </div>
+
+    <button id="menuButton">MENU</button>
+  </header>
+
+
+  <div id="intro">
+
+    <div class="intro-top">
+      CALIFORNIA · USA
+    </div>
+
+    <h1>
+      ENTER<br>
+      <span>STANFORD</span>
+    </h1>
+
+    <p>
+      AN IMMERSIVE CAMPUS EXPERIENCE
+    </p>
+
+    <button id="enterButton">
+      ENTER CAMPUS
+      <span>→</span>
+    </button>
+
+  </div>
+
+
+  <div id="hud">
+
+    <div class="location">
+      <span class="dot"></span>
+      <span id="locationText">PALM DRIVE</span>
+    </div>
+
+    <div class="crosshair">
+      <span></span>
+    </div>
+
+    <div class="instruction">
+      CLICK A DESTINATION
+    </div>
+
+  </div>
+
+
+  <section id="questionPanel">
+
+    <div class="panel-number" id="panelNumber">01</div>
+
+    <div class="panel-content">
+
+      <div class="panel-location" id="panelLocation">
+        MEMORIAL COURT
+      </div>
+
+      <h2 id="panelTitle">
+        CAMPUS &<br>
+        STUDENT LIFE
+      </h2>
+
+      <p id="panelDescription"></p>
+
+      <div id="infoCards"></div>
+
+      <button id="nextButton">
+        CONTINUE
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <aside id="menu">
+
+    <button id="closeMenu">×</button>
+
+    <div class="menu-title">
+      EXPLORE
+    </div>
+
+    <div id="menuItems"></div>
+
+  </aside>
+
+
+  <div id="transition"></div>
+
+
+  <div id="controls">
+    <span>←</span>
+    <span>→</span>
+    <span>EXPLORE</span>
+  </div>
+
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
